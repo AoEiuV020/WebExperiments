@@ -1,0 +1,33 @@
+<!-- https://wenku.baidu.com/view/28d3669316fc700aba68fc7e.html -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>求方程的根</title>
+		<meta charset="utf-8" name="viewport" content="user-scalable=no, width=device-width" />
+	</head>
+	<body>
+        <form>
+            a: <input type="text" id="a"/><br>
+            b: <input type="text" id="b"/><br>
+            c: <input type="text" id="c"/><br>
+            <input type="button" value="计算" onclick="root()"/><br>
+            <p id="root1" />
+            <p id="root2" />
+        </form>
+        <script type="text/javascript">
+function root() {
+    var a=document.getElementById('a').value
+    var b=document.getElementById('b').value
+    var c=document.getElementById('c').value
+    var root_part=Math.sqrt(b*b-4*a*c);
+    var demon=2.0*a;
+    var root1=(-b+root_part)/demon;
+    var root2=(-b-root_part)/demon;
+    document.getElementById('root1').innerText = "The first root is :" + root1;
+    document.getElementById('root2').innerText = "The second root is :" + root2;
+}
+        </script>
+    </body>
+</html>
+
