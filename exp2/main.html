@@ -14,44 +14,46 @@
             <p>Please input your zip:</p>
             <input type="text" name="zip" size="30"/>
             <br/>
-
+            <h2>please fill in the quantity field of the following form.</h2>
+            <table border-"1px" padding="lpx">
+                <tr>
+                    <th>book</th>
+                    <th>publisher</th>
+                    <th>price</th>
+                    <th>quantity</th>
+                </tr>
+                <tr>
+                    <td>Web technology</td>
+                    <td>Spring Press</td>
+                    <td>$5.0</td>
+                    <td> <input type="text" name="WT" size="30"/> </td>
+                </tr>
+                <tr>
+                    <td>Mathmatics</td>
+                    <td>ACM Press</td>
+                    <td>$6.2</td>
+                    <td> <input type="text" name="Ma" size="30"> </td>
+                </tr>
+                <tr>
+                    <td>Principle of OS</td>
+                    <td>Science Press</td>
+                    <td>$10</td>
+                    <td> <input type="text" name="PO" size="30"/> </td>
+                </tr>
+                <tr>
+                    <td>Theory of Matrix</td>
+                    <td>High Education Press</td>
+                    <td>$7.8</td>
+                    <td> <input type="text" name="TM" size="30"/> </td>
+                </tr>
+            </table>
+            <p> payment method </p>
             <input type="radio" name="payment" value="cash" checked="checked">Cash <br/>
             <input type="radio" name="payment" value="cheque" />Cheque<br/>
             <input type="radio" name="payment" value="creditcard" />Credit Card<br/>
-        <table border-"1px" padding="lpx">
-            <tr>
-                <th>book</th>
-                <th>publisher</th>
-                <th>price</th>
-                <th>quantity</th>
-            </tr>
-            <tr>
-                <td>Web technology</td>
-                <td>Spring Press</td>
-                <td>$5.0</td>
-                <td> <input type="text" name="WT" size="30"/> </td>
-            </tr>
-            <tr>
-                <td>Mathmatics</td>
-                <td>ACM Press</td>
-                <td>$6.2</td>
-                <td> <input type="text" name="Ma" size="30"> </td>
-            </tr>
-            <tr>
-                <td>Principle of OS</td>
-                <td>Science Press</td>
-                <td>$10</td>
-                <td> <input type="text" name="PO" size="30"/> </td>
-            </tr>
-            <tr>
-                <td>Theory of Matrix</td>
-                <td>High Education Press</td>
-                <td>$7.8</td>
-                <td> <input type="text" name="TM" size="30"/> </td>
-            </tr>
-        </table>
-        <input type="submit" value="Submit"/>
-        <input type="reset" value="Reset" onclick="reset()"/>
+
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset" onclick="reset()"/>
         </form>
         <script type="text/javascript">
 function reset() {
