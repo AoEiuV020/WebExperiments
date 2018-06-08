@@ -1,16 +1,3 @@
-<?php
-$Name=$_POST["name"];
-$con = mysqli_connect("127.0.0.1","root","rootlocal","web_db","3306");
-mysqli_query($con,'set names utf8');
-if (mysqli_connect_errno($con)) {
-    die('Could not connect: ' . mysqli_connect_error());
-}
-$WT = 1;
-$Ma = 2;
-$PO = 3;
-$TM = 4;
-?>
-
 <html>
     <head>
         <title>Welcome to book seller</title>
@@ -27,6 +14,12 @@ $TM = 4;
                 <th>quantity</th>
             </tr>
 <?php
+$Name=$_POST["name"];
+$con = mysqli_connect("127.0.0.1","root","rootlocal","web_db","3306");
+mysqli_query($con,'set names utf8');
+if (mysqli_connect_errno($con)) {
+    die('Could not connect: ' . mysqli_connect_error());
+}
 $result=mysqli_query($con,"select * from `order` where name = '$Name';");
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {

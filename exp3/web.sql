@@ -32,3 +32,10 @@ INSERT INTO `book` (`book`, `publisher`, `price`) VALUES
   ('Theory of matrix', 'High education press', 7.8);
 
 select * from `order` where name = "林恩怜";
+
+
+/*
+php7.0的mysql相关方法已经和5.x的不同了，用5.x的方法会报错方法找不到undefined function，
+订单order表本该建个外键指向book表，没做，
+php操作mysql真的很方便，
+*/
